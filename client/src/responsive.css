@@ -1,0 +1,193 @@
+@media only screen and (min-width: 320px) and (max-width: 992px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .mobileNav a.active button {
+    @apply !text-primary;
+  }
+  .navigation ul {
+    white-space: nowrap;
+    overflow-x: scroll;
+    text-align: center;
+    overflow-y: hidden;
+    display: block !important;
+  }
+  .navigation ul::-webkit-scrollbar {
+    display: none !important;
+  }
+  .navigation ul li {
+    display: inline-block !important;
+    vertical-align: top !important;
+  }
+  .swiper-pagination-bullet {
+  background: red;
+  opacity: 1;
+}
+
+  .container {
+    /* width: 98% !important; */
+    /* max-width: 98% !important; */
+  }
+  .btn-sm {
+    padding: 3px 10px !important;
+    font-size: 11px !important;
+  }
+  .btn-lg {
+    padding: 5px 10px !important;
+    font-size: 14px !important;
+  }
+  .btn {
+    padding: 5px 10px !important;
+    font-size: 12px !important;
+  }
+  .btn svg {
+    font-size: 15px !important;
+  }
+  .scrollableBox {
+    white-space: nowrap;
+    /* overflow-x: scroll; */
+    overflow-y: hidden;
+    display: block !important;
+  }
+  .scrollableBox::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollableBox .box {
+    display: inline-block !important;
+    vertical-align: top !important;
+    margin-right: 12px !important;
+    width: 300px !important;
+  }
+  .scrollableBox .col {
+    display: inline-block !important;
+    vertical-align: top !important;
+    margin-right: 12px !important;
+    width: 200px !important;
+  }
+  .scrollableBox .box .info * {
+    white-space: break-spaces !important;
+  }
+  /* .product-item .addtocartBtn {
+    padding: 7px 13px !important;
+  }
+  .addtocartBtn {
+    padding: 7px 13px !important;
+  } */
+  .productsSlider .swiper,
+  .blogSection .swiper {
+    overflow: hidden;
+  }
+  /* .resBannerSlider {
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: block !important;
+  } */
+  .resBannerSlider::-webkit-scrollbar {
+    display: none;
+  }
+  /* .resBannerSlider .swiper-slide {
+    display: inline-block !important;
+    vertical-align: top !important;
+    margin-right: 12px !important;
+    width: 300px !important;
+  } */
+  .resBannerSlider .box .info * {
+    white-space: break-spaces !important;
+  }
+  /* .homeBannerSlider {
+      white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: block !important;
+  }
+  .homeBannerSlider::-webkit-scrollbar {
+    display: none;
+  }
+  .homeBannerSlider .swiper-slide {
+    display: inline-block !important;
+    vertical-align: top !important;
+    margin-right: 12px !important;
+    width: 400px !important;
+  }
+  .homeBannerSlider .box .info * {
+    white-space: break-spaces !important;
+  } */
+
+  .footerBoxWrap {
+    padding-left: 20px !important;
+  }
+  .footerBoxWrap .col {
+    width: 180px !important;
+  }
+  .sideBarWrapper.open {
+    bottom: 0px !important;
+    opacity: 1 !important;
+  }
+  /* .part2_col1 li a,.part2_col2 li a{
+    font-size: 13px !important;
+  } */
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .MuiTabs-flexContainer button {
+    font-size: 13px !important;
+  }
+  .product-item .addtocartBtn {
+    padding: 7px 13px !important;
+  }
+  .addtocartBtn {
+    padding: 7px 13px !important;
+  }
+  .part2_col1 li a,
+  .part2_col2 li a {
+    font-size: 13px !important;
+  }
+  .sidebar {
+    max-height: 98vh !important;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+  }
+  .sidebar::-webkit-scrollbar {
+    display: none !important;
+  }
+  .zoomProductSliderThumbs.space .swiper-wrapper {
+    padding-top: 0px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 575px) {
+  .cartPanel .MuiPaper-root,
+  .addressPanel .MuiPaper-root {
+    width: 350px !important;
+  }
+}
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+  .cartPanel .MuiPaper-root,
+  .addressPanel .MuiPaper-root {
+    width: 350px !important;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .col_2 {
+    width: 70% !important;
+  } /* Borrow from col_3 */
+  .col_3 {
+    width: 10% !important;
+  } /* Shrink promo text */
+}
+
+
+
+@media (max-width: 992px) {
+  .homeBannerSlider {
+    padding-bottom: 0 !important;
+    /* padding-top: 10px !important; */
+  }
+}
+@media (max-width: 768px) {
+  .sliderHome {
+    padding-bottom: 6px !important;
+  }
+}

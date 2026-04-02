@@ -1,0 +1,396 @@
+.MuiBadge-badge {
+  background-color: #ff5252 !important;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f1f1f1;
+}
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}
+.btn-purple {
+  padding: 8px 20px !important;
+  background-color: #6d4aae !important;
+  color: white !important;
+}
+.btn-purple:hover {
+  padding: 8px 20px !important;
+  border: 2px solid #6d4aae !important;
+  background-color: white !important;
+  color: #6d4aae !important;
+  font-weight: 800 !important;
+  text-decoration: underline 2px !important;
+}
+.btn-sm {
+  padding: 6px 20px !important;
+  font-size: 13px !important;
+}
+.btn-lg {
+  padding: 8px 20px !important;
+  font-size: 16px !important;
+}
+.btn-blue {
+  background-color: #3872fa !important;
+  color: white !important;
+  padding: 8px 20px !important;
+}
+.btn-blue:hover {
+  background-color: #ff5252 !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px !important;
+  height: 8px !important;
+}
+::-webkit-scrollbar-thumb {
+  background: #575454;
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+.dbtn {
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+}
+th.MuiTableCell-root {
+  @apply bg-[#f1f1f1] py-1;
+}
+a.isActive button {
+  background-color: #c3bebe !important;
+}
+
+.MuiAppBar-colorPrimary {
+  background-color: pink !important;
+  color: black !important;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.MuiSelect-select {
+  background-color: #fff !important;
+}
+
+.MuiDialog-paper {
+  background-color: #f9fafb !important;
+}
+
+.otpBox input {
+  border: 1px solid rgba(0, 0, 0, 0.3) !important;
+  outline: none !important;
+  border-radius: 4px;
+}
+
+.otpBox input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.7) !important;
+}
+.otpBox container {
+  height: 100vh;
+  display: flex;
+}
+.MuiTableBody-root tr:nth-child(even) {
+  @apply bg-gray-200;
+}
+button .MuiCircularProgress-root {
+  width: 30px !important;
+  height: 30px !important;
+}
+input[type="text"]:disabled,
+input[type="email"]:disabled {
+  pointer-events: none;
+  background-color: #f1f1f1 !important;
+}
+.react-international-phone-input {
+  width: 100% !important;
+}
+.react-international-phone-country-selector-button {
+  width: 55px !important;
+}
+
+.react-international-phone-input-container .react-international-phone-input {
+  margin: 0px !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+.Mui-focused fieldset legend {
+  display: none !important;
+}
+.productThumbSwiper {
+  position: relative;
+
+  /* ensure buttons are positioned relative to this container */
+}
+.swiper-slider .swiper-slider {
+  overflow: visible !important;
+}
+/* .swiper-slider .iiz { */
+  /* height: 500px !important;
+  overflow: hidden !important;
+} */
+ /* ✅ FIX DESKTOP IMAGE CUTTING */
+.swiper-slide img,
+.iiz img {
+  object-fit: contain !important;
+  background-color: #fff;
+}
+/* ✅ Make desktop behave like mobile */
+.productMainSwiper {
+  height: auto !important;
+}
+
+.productMainSwiper .swiper-wrapper {
+  height: auto !important;
+}
+
+.productMainSwiper .swiper-slide {
+  height: auto !important;
+  display: flex;
+  justify-content: center;
+}
+/* ✅ Magnifier fix */
+.productMainSwiper .iiz {
+  height: auto !important;
+  max-height: none !important;
+}
+
+.productMainSwiper .iiz img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+/* ✅ Prevent desktop image zoom distortion */
+.productMainSwiper .iiz--zoomed-img {
+  object-fit: contain !important;
+}
+
+.productThumbSwiper .swiper-wrapper {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+.productThumbSwiper .swiper-button-next,
+.productThumbSwiper .swiper-button-prev {
+  width: 100% !important; /* full width */
+  height: 30px !important; /* height of nav */
+  left: 0 !important; /* align left */
+  right: 0 !important; /* align right */
+  top: unset !important; /* remove default top */
+  bottom: unset !important;
+  /* remove default bottom */
+  background-color: #fff !important;
+  color: #ff5252 !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute !important;
+  z-index: 10 !important;
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 10px !important;
+}
+
+.productThumbSwiper .swiper-button-next {
+  bottom: 0 !important; /* position at bottom for vertical thumbs */
+  border-radius: 0 0 20px 20px !important; /* rounded bottom edges */
+  margin-bottom: 0 !important;
+}
+
+.productThumbSwiper .swiper-button-prev {
+  top: 0 !important;
+  transform: translateY(0) !important;
+  border-radius: 20px 20px 0 0 !important; /* rounded top edges */
+}
+
+.productThumbSwiper .swiper-button-next:after,
+.productThumbSwiper .swiper-button-prev:after {
+  font-size: 18px; /* adjust arrow size */
+  transform: rotate(90deg);
+  /* rotate arrow for vertical slider */
+}
+.productThumbSwiper .swiper-button-prev:hover,
+.productThumbSwiper .swiper-button-next:hover {
+  background-color: #ff5252 !important;
+  color: #fff !important;
+}
+/* ✅ MAIN SLIDER - ROUNDED CIRCLE NAVIGATION */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ff5252 !important;
+  background-color: #fff !important;
+
+  width: 44px !important; /* ✅ circle size */
+  height: 44px !important;
+  min-width: 44px !important;
+
+  border-radius: 50% !important; /* ✅ make circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease-in-out;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #fff !important;
+  background-color: #ff5252 !important;
+}
+.swiper-button-prev svg,
+.swiper-button-next svg {
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.smlBtn .swiper-button-prev,
+.smlBtn .swiper-button-next {
+  width: 30px !important;
+  height: 30px !important;
+  top: 55% !important;
+  min-width: 30px !important;
+}
+.contentRight {
+  padding-top: 80px !important;
+  padding-left: 10px !important;
+}
+.rsw-editor {
+  min-height: 200px !important;
+  background-color: white !important;
+}
+.uploadBox h4 {
+  text-align: center;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+.review-scroll {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+.product-row {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  gap: 8px;
+}
+
+.product-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.product-value {
+  word-break: break-word;
+  line-height: 1.4;
+}
+
+.product-pill {
+  padding: 4px 10px;
+  background: #ef4444;
+  color: white;
+  font-size: 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+.productThumbSwiper {
+  align-self: stretch;
+}
+
+
+
+.productMainSwiper .swiper-button-prev,
+.productMainSwiper .swiper-button-next {
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  margin-top: 0 !important;
+}
+.productMainSwiper .swiper-button-prev {
+  left: 8px !important;
+}
+
+.productMainSwiper .swiper-button-next {
+  right: 8px !important;
+}
+
+/* ✅ Default visible state (IMPORTANT for mobile) */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ff5252 !important;   /* arrow color */
+  background: white !important;
+}
+
+/* ✅ Hover effect only for devices that support hover */
+@media (hover: hover) {
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background-color: #ff5252 !important;
+    color: white !important;
+  }
+}
+/* ✅ MOBILE */
+@media (max-width: 600px) {
+  .productMainSwiper {
+    height: 280px;
+  }
+
+  .productThumbSwiper {
+    height: 280px;
+  }
+}
+
+/* ✅ TABLET */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .productMainSwiper {
+    height: 380px;
+  }
+
+  .productThumbSwiper {
+    height: 380px;
+  }
+
+  /* ✅ Reinforce button positions on tablet for vertical thumb swiper */
+  .productThumbSwiper .swiper-button-prev,
+  .productThumbSwiper .swiper-button-next {
+    top: auto !important;
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .productThumbSwiper .swiper-button-prev {
+    top: 0 !important;
+    position: absolute !important;
+  }
+
+  .productThumbSwiper .swiper-button-next {
+    bottom: 0 !important;
+    position: absolute !important;
+  }
+}
+
+/* ✅ LAPTOP / DESKTOP */
+@media (min-width: 1025px) {
+  .productMainSwiper {
+    height: 500px;
+  }
+
+  .productThumbSwiper {
+    height: 500px;
+  }
+}
+@media (max-width: 1024px) {
+  .productThumbSwiper {
+    align-self: stretch !important;
+  }
+}

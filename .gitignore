@@ -1,0 +1,8 @@
+node_modules 
+.env 
+APIKey.csv 
+echo node_modules > .gitignore
+echo .env >> .gitignore
+echo client/.env >> .gitignore
+echo server/.env >> .gitignore
+echo APIKey.csv >> .gitignore

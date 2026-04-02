@@ -1,0 +1,661 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*  Your custom styles AFTER Tailwind imports */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+  /* background-color: blue; */
+}
+p {
+  font-size: 14px !important;
+  line-height: 24px !important;
+  margin-bottom: 15px !important;
+  margin-top: 15px !important;
+  color: #656464 !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: #575757;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  /* background: #efcece !important; This will now apply */
+  overflow-x: hidden;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+.link:hover {
+  color: #ff5252;
+}
+
+.MuiBadge-badge {
+  background-color: #ff5252 !important;
+}
+
+nav button {
+  text-transform: capitalize !important;
+}
+nav ul button:hover {
+  background-color: none !important;
+}
+.sliderHome {
+  overflow: inherit !important;
+}
+
+.home-swiper .swiper-button-prev,
+.home-swiper .swiper-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d !important;
+}
+
+.home-swiper .swiper-button-prev::after,
+.home-swiper .swiper-button-next::after {
+  font-size: 16px !important;
+  color: #000;
+}
+.css-vuhw6e-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root:hover,
+.css-vuhw6e-MuiButtonBase-root-MuiSwitchBase-root-MuiCheckbox-root {
+  color: #ff5252 !important;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 100%;
+  font-size: 8px !important;
+  width: 45px !important;
+  height: 45px !important;
+  min-width: 45px !important;
+  box-shadow: 0 1px 3px #0000001f, 0 1px, 2px #0000003d !important;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 8px !important;
+  color: #000;
+}
+.homeCatSlider {
+  overflow: inherit !important;
+  
+}
+.homeCatSlider .swiper-button-prev {
+  left: 0px !important;
+}
+.homeCatSlider .swiper-button-prev,
+.homeCatSlider .swiper-button-next {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+}
+.sliderHome .swiper-slide {
+  height: 100px !important;
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.homeBannerSlider .swiper-slide img {
+  width: 100% !important;
+  height: auto !important; /* Prevents half-crop */
+  object-fit: cover; /* If images distort */
+}
+.BannerLoading { /* Or .homeSlider if keeping class */
+  position: absolute !important;
+  z-index: 100 !important;
+}
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+.animate-shimmer {
+  animation: shimmer 1.5s infinite;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera */
+}
+.homeCatSlider .swiper-button-prev::after,
+.homeCatSlider .swiper-button-next::after {
+  font-size: 6px !important; /* Adjust arrow size */
+}
+
+.homeCatSlider .item {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.homeCatSlider .swiper-button-prev:hover {
+  background-color: #ff5252 !important;
+  color: #fff !important;
+}
+.homeCatSlider .swiper-button-next:hover {
+  background-color: #ff5252 !important;
+  color: #fff !important;
+}
+.homeCatSlider .swiper-button-prev:hover::after,
+.homeCatSlider .swiper-button-next:hover::after {
+  color: #fff !important;
+}
+.homeCatSlider .swiper-button-nextc {
+  background-color: #ff5252 !important;
+}
+
+.homeCatSlider .item:hover img {
+  transform: scale(1.1);
+}
+::-webkit-scrollbar {
+  width: 10px !important;
+  height: 8px !important;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff5252;
+}
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+.overflow-x-auto::-webkit-scrollbar {
+  height: 8px !important;
+}
+.overflow-x-auto::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ff5252 !important;
+  font: 20px !important;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #fff !important;
+  background-color: #ff5252;
+}
+.swiper-button-prev svg,
+.swiper-button-next svg {
+  width: 25px !important;
+  height: 25px !important;
+}
+/* FULL FIX for pagination spacing issue */
+
+.sliderHome {
+  position: relative !important;
+  padding-bottom: 0 !important;
+  height: auto !important;
+}
+
+.sliderHome .swiper-wrapper {
+  padding-bottom: 0 !important;
+}
+
+.sliderHome .swiper-slide {
+  margin-bottom: 0 !important;
+}
+
+.sliderHome .swiper-pagination {
+  position: absolute !important;
+  bottom: 0px !important;
+  left: 0;
+  width: 100%;
+  
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.sliderHome .swiper-pagination-bullets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12px !important;
+}
+
+.sliderHome .swiper-pagination-bullet {
+  margin: 0 4px !important;
+}
+
+.smlBtn .swiper-button-prev,
+.smlBtn .swiper-button-next {
+  width: 30px !important;
+  height: 30px !important;
+  top: 55% !important;
+  min-width: 30px !important;
+}
+
+.MuiTabs-indicator {
+  background-color: #ff5252 !important;
+}
+.MuiTab-textColorPrimary.Mui-selected {
+  color: #ff5252 !important;
+}
+
+.productsSlider .swiper-wrapper {
+  padding: 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.btn-org:hover {
+  background-color: black !important;
+  border: 2px !important ;
+  border: 2px solid #ff5252 !important ;
+  color: #ff5252 !important;
+  padding: 7px 20px !important;
+}
+.btn-org {
+  background-color: #ff5252 !important;
+  color: #fff !important;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 7px 20px !important;
+}
+.btn-org.btn-border:hover {
+  background-color: #171717 !important;
+  /* color: #ff5252 !important; */
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff !important;
+  border: 1px solid #ff5252 !important;
+}
+.btn-org.btn-border {
+  background-color: white !important;
+  color: #ff5252 !important;
+  border: 1px solid #ff5252 !important;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 4px 10px !important;
+}
+.btn-lg {
+  font-size: 18px;
+  padding: 10px 20px !important;
+}
+.btn-sm {
+  font-size: 12px;
+  padding: 5px 20px !important;
+}
+.btn-large{
+  font-size: 20px !important;
+  padding: 10px 20px !important;
+}
+footer form input::placeholder {
+  font-size: 14px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-horizontal.swiper-pagination-bullets {
+  color: #ff5252 !important;
+}
+
+.css-19opgx6-MuiFormControlLabel-root {
+  font-size: 17px !important;
+}
+
+.homeSliderV2 .info {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  opacity: 0;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s ease-in-out;
+}
+
+.homeSliderV2 .swiper-slide-active .info {
+  right: 0 !important;
+  opacity: 1;
+}
+
+.homeSliderV2 .swiper-slide-active .info h4 {
+  right: 0 !important;
+  opacity: 1;
+}
+.homeSliderV2 .swiper-slide-active .info btn_ {
+  right: 0px !important;
+  opacity: 1;
+}
+.homeSliderV2 .info h2 {
+  transition-duration: 3s;
+}
+.homeSliderV2 .info h3 {
+  transition-duration: 4s;
+}
+.homeSliderV2 .info h4 {
+  transition-duration: 4s;
+}
+.homeSliderV2 .info .btn_ {
+  transition-duration: 4s;
+
+}
+.MuiCheckbox-root {
+  padding: 8px !important;
+}
+.itemViewActions button.active svg {
+  color: #ff5252 !important;
+  opacity: 1;
+}
+
+.Mui-selected.MuiPaginationItem-page {
+  background-color: #ff5252 !important;
+  color: #fff !important;
+}
+
+.mainclass .swiper-button-prev:hover,
+.mainclass .swiper-button-next:hover {
+  color: white !important;
+  background-color: #ff5252 !important; /* ensure buttons are positioned relative to this container */
+}
+.zoomProductSliderThumbs {
+  position: relative; /* ensure buttons are positioned relative to this container */
+}
+
+.zoomProductSliderThumbs .swiper-button-next,
+.zoomProductSliderThumbs .swiper-button-prev {
+  width: 130% !important; /* full width */
+  height: 30px !important; /* height of nav */
+  left: 0 !important; /* align left */
+  right: 0 !important; /* align right */
+  border-radius: 0 !important; /* no rounding */
+  top: unset !important; /* remove default top */
+  bottom: unset !important;
+  /* remove default bottom */
+}
+
+.zoomProductSliderThumbs .swiper-button-next {
+  bottom: 0 !important; /* position at bottom for vertical thumbs */
+}
+
+.zoomProductSliderThumbs .swiper-button-prev {
+  top: 0 !important; /* position at top for vertical thumbs */
+}
+
+.zoomProductSliderThumbs .swiper-button-next:after,
+.zoomProductSliderThumbs .swiper-button-prev:after {
+  font-size: 18px; /* adjust arrow size */
+  transform: rotate(90deg);
+  /* rotate arrow for vertical slider */
+}
+.zoomProductSliderThumbs .swiper-button-prev:hover,
+.zoomProductSliderThumbs .swiper-button-next:hover {
+  background-color: #ff5252;
+  color: #fff !important;
+}
+/* .qtyBox .btn-qty {
+    border: 3px solid #ff5252 !important;
+} */
+.mainZoomSwiper .swiper-slide {
+  visibility: hidden;
+}
+.mainZoomSwiper .swiper-slide-active {
+  visibility: visible;
+}
+.iiz {
+  border-radius: 20px !important;
+}
+.iiz__img {
+  transition: none !important;
+  background-color: white;
+}
+.inner-image-zoom {
+  transition: transform 0.2s ease-in-out !important;
+  overflow: hidden;
+}
+
+.actions button {
+  min-width: 40px !important;
+  border: 1px solid rgba(176, 25, 25, 0.5) !important;
+  height: 30px !important;
+}
+.actions button.error {
+  border: 2px solid #ff5252 !important;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.reviewscroll::-webkit-scrollbar {
+  width: 5px !important;
+}
+.reviewscroll::-webkit-scrollbar-thumb {
+  background-color: #ccc !important;
+}
+.inner-image-zoom {
+  overflow: visible !important; /* Allow zoom overlay to render freely */
+  position: relative;
+  z-index: 10; /* Prevent clipping under swiper */
+}
+
+/* .swiper {
+  overflow: visible !important;
+} */
+ .sliderHome {
+  position: relative !important;
+  padding-bottom: 20px;   /* reserve space for bullets */
+}
+
+.sliderHome .swiper-pagination {
+  position: absolute !important;
+  bottom: 0px !important;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.sliderHome .swiper-button-prev,
+.sliderHome .swiper-button-next {
+  top: 210% !important;
+  transform: translateY(-50%);
+  bottom: auto !important;
+}
+
+.productDetailsModal .MuiDialogContent-root {
+  padding: 0px !important;
+}
+
+/* ImageZoom.css */
+.image-container {
+  overflow: hidden; /* Prevents the image from overflowing the container during zoom */
+  display: inline-block; /* Adjusts to image size */
+}
+
+.zoom-image {
+  display: block;
+  transition: transform 0.3s ease-in-out; /* Smooth zoom transition */
+  width: 100%; /* Adjust as needed for your layout */
+  height: auto;
+}
+
+.zoom-image:hover {
+  transform: scale(
+    1.5
+  ); /* Zoom level - adjust the scale value as desired (e.g., 1.2 for subtler effect) */
+  cursor: zoom-in; /* Optional: Changes cursor to indicate interactivity */
+}
+.cartPanel .MuiPaper-root {
+  overflow: hidden;
+}
+
+#size-menu .MuiButtonBase-root {
+  font-size: 14px !important;
+}
+
+.otpBox input {
+  border: 1px solid rgba(0, 0, 0, 0.3) !important;
+  outline: none !important;
+  border-radius: 4px;
+}
+
+.otpBox input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.7) !important;
+}
+.otpBox container {
+  height: 90vh;
+  display: flex;
+}
+.scroll::-webkit-scrollbar {
+  width: 5px !important;
+}
+.scroll::-webkit-scrollbar-thumb {
+  background-color: #ccc !important;
+}
+#account-menu .MuiPaper-root {
+  width: 200px !important;
+}
+.myAccountTabs li a {
+  position: relative;
+  display: block;
+}
+.myAccountTabs li a:before {
+  content: "";
+  width: 3px;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  background-color: #ff5252;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+.myAccountTabs li a.active::before {
+  height: 100%;
+  opacity: 1;
+  top: 0px;
+}
+.myAccountTabs li a.active button svg {
+  color: #ff5252 !important;
+  opacity: 1;
+}
+.myAccountTabs li a.active {
+  color: #ff5252 !important;
+}
+button .MuiCircularProgress-root {
+  width: 30px !important;
+  height: 30px !important;
+}
+button.btn-org .MuiCircularProgress-root {
+  color: #fff !important;
+}
+
+.react-international-phone-input {
+  width: 100% !important;
+}
+.react-international-phone-country-selector-button {
+  width: 55px !important;
+  border: 2px solid rgba(0, 0, 0, 0.2) !important;
+  border-right: none !important;
+}
+
+.react-international-phone-input-container .react-international-phone-input {
+  margin: 0px !important;
+  font-size: 14px !important;
+  border: 2px solid rgba(0, 0, 0, 0.2) !important;
+}
+.react-international-phone-input-container .react-international-phone-input {
+  margin: 0px !important;
+  font-size: 14px !important;
+  border: 2px solid rgba(0, 0, 0, 0.2) !important;
+}
+.MuiDialog-paper {
+  width: 700px !important;
+  max-width: 700px !important;
+}
+
+.productDetailsModal .MuiDialog-paper {
+  width: 1500px !important;
+  max-width: 1500px !important;
+  
+}
+header {
+  box-shadow: 0px 1px 5px #0000001a;
+}
+.lazy-load-image-background img {
+  transition: all 0.1s ease-in-out !important;
+}
+
+.MuiFormControlLabel-root {
+  margin-right: 0px !important;
+}
+.css-1wxecgq-MuiCircularProgress-root {
+  @apply !text-primary;
+}
+
+/* //complete with video 64 */
+.MuiButtonBase-root.MuiMenuItem-root.MuiMenuItem-gutters.selected {
+  @apply !text-primary;
+}
+.Mui-checked {
+  color: #ff5252 !important;
+}
+.addressPanel .MuiPaper-root {
+  /* width: 800px ; */
+  overflow: hidden;
+}
+
+.btn-dark {
+  background: #363636 !important;
+  color: #fff !important;
+  border: 1px solid #171717 !important;
+}
+.btn-dark:hover {
+  background-color: #171717 !important;
+}
+.searchBox .MuiCircularProgress-root {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-shimmer {
+  animation: shimmer 1.5s infinite;
+}
+.bannerBox img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.bannerBox:hover img {
+  transform: scale(1.05);
+}
+
+
+/* [#ff9a9a] */
+/* .zoomContainer img {
+  object-fit: contain !important;
+}
+
+.zoomContainer .iiz__img {
+  transition: transform 0.2s ease-in-out;
+}
+
+.zoomContainer .iiz__img:hover {
+  transform: scale(1.05);
+ }
+  */

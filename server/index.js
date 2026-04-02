@@ -1,0 +1,63 @@
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+dotenv.config();
+import cookieParser from "cookie-parser";
+import morgan from "morgan";
+import helmet from "helmet";
+import connectDB from "./config/connectDb.js";
+import userRouter from "./route/user.route.js";
+import categoryRouter from "./route/category.route.js";
+import productRouter from "./route/product.route.js";
+import cartRouter from "./route/cart.route.js";
+import myListRouter from "./route/mylist.route.js";
+import addressRouter from "./route/address.route.js";
+import homeSlidesRouter from "./route/homeSlides.route.js";
+import bannerV1Router from "./route/bannerV1.route.js";
+import BlogRouter from "./route/blog.route.js";
+import bannerV2Router from "./route/bannerList2.route.js";
+import orderRouter from "./route/order.route.js";
+import paymentRoutes from "./route/payment.routes.js";
+import catBannerRouter from "./route/catBanners.route.js";
+const app = express();
+
+app.use(cors());
+app.options("", cors());
+app.use(express.json());
+app.use(cookieParser());
+app.use(morgan("dev"));
+app.use(
+  helmet({
+    crossOriginResourcePolicy: false,
+  })
+);
+
+app.get("/", (req, res) => {
+  res.json({
+    message: "Server is running " + process.env.PORT,
+  });
+});
+
+
+app.use('/api/user',userRouter)
+app.use('/api/category',categoryRouter)
+app.use('/api/product',productRouter)
+app.use('/api/cart',cartRouter)
+app.use('/api/myList',myListRouter)
+app.use('/api/address',addressRouter)
+app.use('/api/homeSlides',homeSlidesRouter)
+app.use('/api/bannerV1',bannerV1Router)
+app.use('/api/bannerList2',bannerV2Router)
+app.use('/api/catBanner',catBannerRouter)
+app.use('/api/blog',BlogRouter)
+app.use('/api/order',orderRouter)
+app.use("/api/payment", paymentRoutes);
+
+
+
+
+connectDB().then(() => {
+  app.listen(process.env.PORT, () => {
+    console.log("Server is running on port", process.env.PORT);
+  });
+});

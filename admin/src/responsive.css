@@ -1,0 +1,138 @@
+@media only screen and (min-width: 320px) and (max-width: 992px) {
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+}
+
+.review-scroll {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+/* ✅ Default visible state (IMPORTANT for mobile) */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ff5252 !important;   /* arrow color */
+  background: white !important;
+}
+
+/* ✅ Hover effect only for devices that support hover */
+
+  .dashboardBoxesSlider .swiper-wrapper {
+    overflow-x: scroll !important;
+    white-space: nowrap;
+    display: block !important;
+  }
+  .dashboardBoxesSlider .swiper-wrapper .swiper-slide {
+    /* width: 300px !important; */
+    display: inline-block;
+    vertical-align: top;
+  }
+  .dashboardBoxesSlider .box {
+  min-height: 90px;
+}
+
+  .contentRight{
+    padding-left:15px !important
+  }
+
+  .dashboardBoxesSlider .swiper-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .sidebarOverlay{
+    pointer-events: inherit;
+  }
+  .btn-sm{
+    padding: 3px 10px !important;
+    font-size:11px !important
+  }
+  .btn-lg{
+    padding: 5px 10px !important;
+    font-size:14px !important
+  }
+  .btn{
+    padding: 5px 10px !important;
+    font-size:12px !important
+  }
+  .btn svg{
+    
+    font-size:15px !important
+  }
+  .dashboardFilters {
+    display: block;
+    white-space: nowrap;
+    overflow-x: scroll;
+  }
+  .dashboardFilters::-webkit-scrollbar {
+    display: none;
+  }
+  .dashboardFilters .col {
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    padding-right: 15px;
+  }
+  .dashboardFilters .search_box {
+    position: relative;
+    top: 20px;
+  }
+  .MuiPagination-root {
+    width: 80% !important;
+    margin: auto !important;
+  }
+  .MuiPagination-ul {
+    white-space: nowrap !important;
+    overflow-x: scroll !important;
+    display: block !important;
+    width: 100% !important;
+  }
+  .MuiPagination-ul li {
+    display: inline-block !important;
+    vertical-align: top !important;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 992px) {
+  .MuiTableCell-head {
+    white-space: nowrap;
+  }
+}
+@media (hover: hover) {
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background-color: #ff5252 !important;
+    color: white !important;
+  }
+}
+@media (max-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    background-color: #ff5252 !important;
+    color: white !important;
+  }
+}
+
+
+/* ✅ Swiper arrows LEFT/RIGHT on mobile */
+@media (max-width: 1023px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 50% !important;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 50%;
+    color: white !important;
+    background-color: #ff5252 !important;
+  }
+
+  .swiper-button-prev {
+    left: 6px !important;
+    right: auto;
+  }
+
+  .swiper-button-next {
+    right: 6px !important;
+    left: auto;
+  }
+}
