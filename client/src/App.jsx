@@ -217,7 +217,7 @@ import React, { createContext, useEffect, useState } from "react";
 
 import Header from "./components/Header";
 import { Link, Route, Routes, useNavigate } from "react-router-dom";
-import Home from "./Pages/Home";
+import Home from "./Pages/Home/index.jsx";
 import "./index.css";
 import "./App.css";
 import "./responsive.css";

@@ -66,13 +66,7 @@ const ProductDetails = () => {
     <>
       <div className="flex items-center justify-between px-2 mt-0 py-0">
         <h3 className="text-[20px] font-[600]">Products Details</h3>
-        {/* <InnerImageZoom
-          src="/fs.png"
-          zoomSrc="/fs.png"
-          zoomType="hover"
-          className="w-[400px] h-[400px]"
-          zoomPreload={true}
-        /> */}
+       
       </div>
       <br />
       {product?._id !== "" &&
